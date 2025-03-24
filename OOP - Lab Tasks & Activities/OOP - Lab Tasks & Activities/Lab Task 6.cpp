@@ -1,6 +1,6 @@
-
+//
 #pragma region Example 4.1
-
+//
 //#include <iostream>
 //#include <conio.h>
 //using namespace std;
@@ -57,11 +57,11 @@
 //
 //	return 0;
 //};
-
+//
 #pragma endregion
-
+//
 #pragma region Example 4.2
-
+//
 //#include <iostream>
 //using namespace std;
 //
@@ -107,9 +107,9 @@
 //	system("pause");
 //	return 0;
 //};
-
+//
 #pragma endregion
-
+//
 #pragma region Example 4.3
 //
 //#include <iostream>
@@ -173,91 +173,219 @@
 //
 //	return 0;
 //};
-
+//
 #pragma endregion
-
+//
 #pragma region Task 1
-
-#include <iostream>
-using namespace std;
-
-class Publication {
-
-protected:
-	string title;
-	float price;
-
-public:
-	void getData() {
-		cout << "Enter title: " << endl;
-		cin >> title;
-		cout << "Enter price: " << endl;
-		cin >> price;
-	}
-
-	void putData() {
-		cout << "Title: " << title << endl;
-		cout << "Price: " << price << endl;
-	}
-};
-
-class Book : public Publication {
-
-protected:
-	int pageCount;
-
-public:
-	void getData() {
-
-		Publication::getData();
-		cout << "Enter page count: " << endl;
-		cin >> pageCount;
-	}
-
-	void putData() {
-
-		Publication::putData();
-		cout << "Page count: " << pageCount << endl;
-	}
-};
-
-class Tape : public Publication {
-private:
-	float playingTime;
-
-public:
-	void getData() {
-
-		Publication::getData();
-		cout << "Enter playing time: " << endl;
-		cin >> playingTime;
-	}
-	void putData() {
-
-		Publication::putData();
-		cout << "Playing time: " << playingTime << endl;
-	}
-};
-
-int main() {
-	Book b1;
-	Tape t1;
-
-	b1.getData();
-	t1.getData();
-
-	b1.putData();
-	t1.putData();
-
-	return 0;
-}
-
+//
+//#include <iostream>
+//using namespace std;
+//
+//class Publication {
+//
+//protected:
+//	string title;
+//	float price;
+//
+//public:
+//	void getData() {
+//		cout << "Enter title: " << endl;
+//		cin >> title;
+//		cout << "Enter price: " << endl;
+//		cin >> price;
+//	}
+//
+//	void putData() {
+//		cout << "Title: " << title << endl;
+//		cout << "Price: " << price << endl;
+//	}
+//};
+//
+//class Book : public Publication {
+//
+//protected:
+//	int pageCount;
+//
+//public:
+//	void getData() {
+//
+//		Publication::getData();
+//		cout << "Enter page count: " << endl;
+//		cin >> pageCount;
+//	}
+//
+//	void putData() {
+//
+//		Publication::putData();
+//		cout << "Page count: " << pageCount << endl;
+//	}
+//};
+//
+//class Tape : public Publication {
+//private:
+//	float playingTime;
+//
+//public:
+//	void getData() {
+//
+//		Publication::getData();
+//		cout << "Enter playing time: " << endl;
+//		cin >> playingTime;
+//	}
+//	void putData() {
+//
+//		Publication::putData();
+//		cout << "Playing time: " << playingTime << endl;
+//	}
+//};
+//
+//int main() {
+//	Book b1;
+//	Tape t1;
+//
+//	b1.getData();
+//	t1.getData();
+//
+//	b1.putData();
+//	t1.putData();
+//
+//	return 0;
+//}
+//
 #pragma endregion
-
+//
 #pragma region Task 2
-
-
-
+//
+//#include <iostream>
+//using namespace std;
+//
+//class Person {
+//protected:
+//	int id;
+//	string name, address;
+//
+//public:
+//	Person() {}
+//
+//	void input() {
+//		cout << "Enter ID: ";
+//		cin >> id;
+//		cout << "Enter Name: ";
+//		cin >> name;
+//		cout << "Enter Address: ";
+//		cin >> address;
+//	}
+//
+//	void display() {
+//		cout << "ID: " << id << endl;
+//		cout << "Name: " << name << endl;
+//		cout << "Address: " << address << endl;
+//	}
+//};
+//
+//class Student : public Person {
+//protected:
+//	int rollNumber;
+//	float marks;
+//
+//public:
+//	void input() {
+//		Person::input();
+//		cout << "Enter Roll Number: ";
+//		cin >> rollNumber;
+//		cout << "Enter Marks: ";
+//		cin >> marks;
+//	}
+//
+//	void display() {
+//		Person::display();
+//		cout << "Roll Number: " << rollNumber << endl;
+//		cout << "Marks: " << marks << endl;
+//	}
+//};
+//
+//int main() {
+//	Student s;
+//	cout << "Enter Student Details:\n";
+//	s.input();
+//
+//	cout << "\nStudent Information:\n";
+//	s.display();
+//
+//	return 0;
+//}
+//
+//
 #pragma endregion
-
+//
+#pragma region Task 3
+//
+//#include <iostream>
+//using namespace std;
+//
+//class Computer {
+//protected:
+//	int wordSize, memorySize, storageSize, speed;
+//
+//public:
+//	Computer() {}
+//
+//	void input() {
+//		cout << "Enter Word Size (bits): ";
+//		cin >> wordSize;
+//		cout << "Enter Memory Size (MB): ";
+//		cin >> memorySize;
+//		cout << "Enter Storage Size (MB): ";
+//		cin >> storageSize;
+//		cout << "Enter Speed (MHz): ";
+//		cin >> speed;
+//	}
+//
+//	void display() {
+//		cout << "Word Size: " << wordSize << " bits" << endl;
+//		cout << "Memory Size: " << memorySize << " MB" << endl;
+//		cout << "Storage Size: " << storageSize << " MB" << endl;
+//		cout << "Speed: " << speed << " MHz" << endl;
+//	}
+//};
+//
+//class Laptop : public Computer {
+//protected:
+//	float length, width, height, weight;
+//
+//public:
+//	void input() {
+//		Computer::input();
+//		cout << "Enter Length (cm): ";
+//		cin >> length;
+//		cout << "Enter Width (cm): ";
+//		cin >> width;
+//		cout << "Enter Height (cm): ";
+//		cin >> height;
+//		cout << "Enter Weight (kg): ";
+//		cin >> weight;
+//	}
+//
+//	void display() {
+//		Computer::display();
+//		cout << "Length: " << length << " cm" << endl;
+//		cout << "Width: " << width << " cm" << endl;
+//		cout << "Height: " << height << " cm" << endl;
+//		cout << "Weight: " << weight << " kg" << endl;
+//	}
+//};
+//
+//int main() {
+//	Laptop l;
+//	cout << "Enter Laptop Details:\n";
+//	l.input();
+//
+//	cout << "\nLaptop Specifications:\n";
+//	l.display();
+//
+//	return 0;
+//}
+//
+#pragma endregion
+//
 
