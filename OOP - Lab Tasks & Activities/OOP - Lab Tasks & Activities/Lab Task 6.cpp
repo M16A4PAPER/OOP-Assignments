@@ -1,6 +1,6 @@
-//
+
 #pragma region Example 4.1
-//
+
 //#include <iostream>
 //#include <conio.h>
 //using namespace std;
@@ -53,15 +53,14 @@
 //	obj.setJ(4);
 //
 //	cout << obj.mu1() << endl;
-//	system("pause");
 //
 //	return 0;
 //};
-//
+
 #pragma endregion
-//
+
 #pragma region Example 4.2
-//
+
 //#include <iostream>
 //using namespace std;
 //
@@ -104,14 +103,13 @@
 //	--c1; --c1;
 //	cout << "\nc1 = " << c1.get_count() << endl;
 //
-//	system("pause");
 //	return 0;
 //};
-//
+
 #pragma endregion
-//
+
 #pragma region Example 4.3
-//
+
 //#include <iostream>
 //#include <conio.h>
 //using namespace std;
@@ -173,11 +171,11 @@
 //
 //	return 0;
 //};
-//
+
 #pragma endregion
-//
+
 #pragma region Task 1
-//
+
 //#include <iostream>
 //using namespace std;
 //
@@ -244,18 +242,18 @@
 //	Tape t1;
 //
 //	b1.getData();
-//	t1.getData();
-//
 //	b1.putData();
+//
+//	t1.getData();
 //	t1.putData();
 //
 //	return 0;
 //}
-//
+
 #pragma endregion
-//
+
 #pragma region Task 2
-//
+
 //#include <iostream>
 //using namespace std;
 //
@@ -314,12 +312,12 @@
 //
 //	return 0;
 //}
-//
-//
+
+
 #pragma endregion
-//
+
 #pragma region Task 3
-//
+
 //#include <iostream>
 //using namespace std;
 //
@@ -385,7 +383,306 @@
 //
 //	return 0;
 //}
-//
-#pragma endregion
-//
 
+#pragma endregion
+
+#pragma region Task 1(2)
+
+//#include <iostream>
+//using namespace std;
+//
+//class Student {
+//protected:
+//    int rollno;
+//    string name;
+//    string Class;
+//
+//public:
+//    void getData() {
+//        cout << "Enter Roll No: ";
+//        cin >> rollno;
+//        cout << "Enter Name: ";
+//        cin >> name;
+//        cout << "Enter Class: ";
+//        cin >> Class;
+//    }
+//
+//    void putData() {
+//        cout << "Roll No: " << rollno << endl;
+//        cout << "Name: " << name << endl;
+//        cout << "Class: " << Class << endl;
+//    }
+//};
+//
+//class Test : public Student {
+//protected:
+//    float T1marks, T2marks, T3marks;
+//    float Sessional1, Sessional2, Assignment;
+//    float Final;
+//
+//public:
+//    void getMarks() {
+//        cout << "Enter Test 1 Marks: ";
+//        cin >> T1marks;
+//        cout << "Enter Test 2 Marks: ";
+//        cin >> T2marks;
+//        cout << "Enter Test 3 Marks: ";
+//        cin >> T3marks;
+//        cout << "Enter Sessional 1 Marks: ";
+//        cin >> Sessional1;
+//        cout << "Enter Sessional 2 Marks: ";
+//        cin >> Sessional2;
+//        cout << "Enter Assignment Marks: ";
+//        cin >> Assignment;
+//    }
+//
+//    void putMarks() {
+//        cout << "Test 1 Marks: " << T1marks << endl;
+//        cout << "Test 2 Marks: " << T2marks << endl;
+//        cout << "Test 3 Marks: " << T3marks << endl;
+//        cout << "Sessional 1 Marks: " << Sessional1 << endl;
+//        cout << "Sessional 2 Marks: " << Sessional2 << endl;
+//        cout << "Assignment Marks: " << Assignment << endl;
+//        cout << "Final Marks: " << Final << endl;
+//    }
+//
+//    void FinalResult() {
+//        Final = (T1marks + T2marks + T3marks + Sessional1 + Sessional2 + Assignment) / 6;
+//    }
+//};
+//
+//int main() {
+//    Test student;
+//    student.getData();
+//    student.getMarks();
+//    student.FinalResult();
+//    student.putData();
+//    student.putMarks();
+//
+//    return 0;
+//}
+
+#pragma endregion
+
+#pragma region Task 2(2)
+
+//#include <iostream>
+//using namespace std;
+//
+//class Simple {
+//protected:
+//    int num1, num2;
+//
+//public:
+//    void getData() {
+//        cout << "Enter two numbers: ";
+//        cin >> num1 >> num2;
+//    }
+//
+//    void add() { cout << "Addition: " << num1 + num2 << endl; }
+//    void sub() { cout << "Subtraction: " << num1 - num2 << endl; }
+//    void mul() { cout << "Multiplication: " << num1 * num2 << endl; }
+//    void div() { cout << "Division: " << (num2 != 0 ? num1 / num2 : 0) << endl; }
+//};
+//
+//class Complex : public Simple {
+//public:
+//    void add() {
+//        if (num1 > 0 && num2 > 0)
+//            Simple::add();
+//        else
+//            cout << "Error: Numbers must be positive!" << endl;
+//    }
+//
+//    void sub() {
+//        if (num1 > 0 && num2 > 0)
+//            Simple::sub();
+//        else
+//            cout << "Error: Numbers must be positive!" << endl;
+//    }
+//
+//    void mul() {
+//        if (num1 > 0 && num2 > 0)
+//            Simple::mul();
+//        else
+//            cout << "Error: Numbers must be positive!" << endl;
+//    }
+//
+//    void div() {
+//        if (num1 > 0 && num2 > 0)
+//            Simple::div();
+//        else
+//            cout << "Error: Numbers must be positive!" << endl;
+//    }
+//};
+//
+//int main() {
+//    Complex obj;
+//    obj.getData();
+//    obj.add();
+//    obj.sub();
+//    obj.mul();
+//    obj.div();
+//
+//    return 0;
+//}
+
+
+#pragma endregion
+
+#pragma region Task 3(2)
+
+//#include <iostream>
+//using namespace std;
+//
+//class Electricity {
+//protected:
+//    int units;
+//    float cost;
+//
+//public:
+//    void getUnits() {
+//        cout << "Enter units consumed: ";
+//        cin >> units;
+//    }
+//
+//    void Bill() {
+//        if (units <= 100)
+//            cost = units * 0.50;
+//        else
+//            cost = (100 * 0.50) + ((units - 100) * 0.60);
+//
+//        cout << "Total Bill: Rs. " << cost << endl;
+//    }
+//};
+//
+//class More_Electricity : public Electricity {
+//public:
+//    void Bill() {
+//        Electricity::Bill();
+//        if (cost > 25000) {
+//            float surcharge = 0.15 * (cost - 25000);
+//            cost += surcharge;
+//            cout << "Surcharge Added: Rs. " << surcharge << endl;
+//            cout << "Final Bill: Rs. " << cost << endl;
+//        }
+//    }
+//};
+//
+//int main() {
+//    More_Electricity bill;
+//    bill.getUnits();
+//    bill.Bill();
+//
+//    return 0;
+//}
+
+#pragma endregion
+
+#pragma region Task 4(2)
+
+//#include <iostream>
+//using namespace std;
+//
+//class Package {
+//protected:
+//	string senderName, senderAddress, senderCity, senderState, senderZIP;
+//	string recipientName, recipientAddress, recipientCity, recipientState, recipientZIP;
+//	double weight;
+//	double costPerOunce;
+//
+//public:
+//	Package(string sName, string sAddress, string sCity, string sState, string sZIP,
+//		string rName, string rAddress, string rCity, string rState, string rZIP,
+//		double w, double cost)
+//		: senderName(sName), senderAddress(sAddress), senderCity(sCity), senderState(sState), senderZIP(sZIP),
+//		recipientName(rName), recipientAddress(rAddress), recipientCity(rCity), recipientState(rState), recipientZIP(rZIP),
+//		weight(w), costPerOunce(cost) {
+//	}
+//
+//	double calculateCost() {
+//		return weight * costPerOunce;
+//	}
+//
+//	void displayInfo() {
+//		cout << "Sender: " << senderName << " - " << senderAddress << ", " << senderCity << ", " << senderState << " " << senderZIP << endl;
+//		cout << "Recipient: " << recipientName << " - " << recipientAddress << ", " << recipientCity << ", " << recipientState << " " << recipientZIP << endl;
+//		cout << "Weight: " << weight << " oz" << endl;
+//		cout << "Cost per ounce: $" << costPerOunce << endl;
+//		cout << "Total Cost: $" << calculateCost() << endl;
+//	}
+//};
+//
+//class TwoDayPackage : public Package {
+//private:
+//	double flatFee;
+//
+//public:
+//	TwoDayPackage(string sName, string sAddress, string sCity, string sState, string sZIP,
+//		string rName, string rAddress, string rCity, string rState, string rZIP,
+//		double w, double cost, double fee)
+//		: Package(sName, sAddress, sCity, sState, sZIP, rName, rAddress, rCity, rState, rZIP, w, cost), flatFee(fee) {
+//	}
+//
+//	double calculateCost() {
+//		return Package::calculateCost() + flatFee;
+//	}
+//
+//	void displayInfo() {
+//		Package::displayInfo();
+//		cout << "Flat Fee for Two-Day Delivery: $" << flatFee << endl;
+//		cout << "Total Cost (including flat fee): $" << calculateCost() << endl;
+//	}
+//};
+//
+//class OvernightPackage : public Package {
+//private:
+//	double extraFeePerOunce;
+//
+//public:
+//	OvernightPackage(string sName, string sAddress, string sCity, string sState, string sZIP,
+//		string rName, string rAddress, string rCity, string rState, string rZIP,
+//		double w, double cost, double extraFee)
+//		: Package(sName, sAddress, sCity, sState, sZIP, rName, rAddress, rCity, rState, rZIP, w, cost), extraFeePerOunce(extraFee) {
+//	}
+//
+//	double calculateCost() {
+//		return weight * (costPerOunce + extraFeePerOunce);
+//	}
+//
+//	void displayInfo() {
+//		Package::displayInfo();
+//		cout << "Extra Fee per Ounce for Overnight Delivery: $" << extraFeePerOunce << endl;
+//		cout << "Total Cost (including overnight charge): $" << calculateCost() << endl;
+//	}
+//};
+//
+//int main() {
+//	Package standard("NameOne", "123 Main St", "Main Area", "MA", "12345",
+//		"NameTwo", "456 Main St", "Main Area", "MA", "54321",
+//		10, 0.5);
+//
+//	TwoDayPackage twoDay("NameOne", "123 Main St", "Main Area", "MA", "12345",
+//		"NameTwo", "456 Main St", "Main Area", "MA", "54321",
+//		10, 0.5, 5.0);
+//
+//	OvernightPackage overnight("NameOne", "123 Main St", "Main Area", "MA", "12345",
+//		"NameTwo", "456 Main St", "Main Area", "MA", "54321",
+//		10, 0.5, 0.2);
+//
+//	cout << "Standard Package Details:\n";
+//	standard.displayInfo();
+//	cout << "\n";
+//
+//	cout << "Two-Day Package Details:\n";
+//	twoDay.displayInfo();
+//	cout << "\n";
+//
+//	cout << "Overnight Package Details:\n";
+//	overnight.displayInfo();
+//	cout << "\n";
+//
+//	return 0;
+//}
+
+#pragma endregion
