@@ -132,6 +132,7 @@
     <ClCompile Include="Class Activity Lecture 4.cpp" />
     <ClCompile Include="Lab Task 2.cpp" />
     <ClCompile Include="Lab Task 6.cpp" />
+    <ClCompile Include="Lab Task 7.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
