@@ -1,4 +1,18 @@
 
+#include <iostream>
+using namespace std;
+
+int main() {
+	const int x = 15;
+
+	int x = 5;
+
+	cout << x << endl;
+
+	return 0;
+}
+
+
 // Task 1 ----------------------------------------------------------------------------------
 
 //#include <iostream>
