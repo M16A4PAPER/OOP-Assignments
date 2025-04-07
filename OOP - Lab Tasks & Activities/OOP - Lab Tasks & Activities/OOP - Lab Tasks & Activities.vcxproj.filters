@@ -24,7 +24,10 @@
     <ClCompile Include="Class Activity Lecture 4.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="LabTask5.cpp">
+    <ClCompile Include="Lab Task 6.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Assignment_02.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
